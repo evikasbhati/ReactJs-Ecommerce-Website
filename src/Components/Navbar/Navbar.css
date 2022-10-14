@@ -45,6 +45,10 @@
     color:black;
     transition: 1.5ms;
 }
+.hamBurger{
+    display: none;
+}
+
 .Search{
     order:3;
     
@@ -101,3 +105,42 @@
 .cart_button:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    
+    .Search{
+        display: none;
+    }
+    .hamBurger{
+        display: block;
+        cursor: pointer;
+        margin-left:10px;
+        z-index: 100;
+    }
+    .menu_items{
+        display: none;
+    }
+    .hamMenu{
+        position:absolute;
+        top: 2rem;
+        background-color:#36bee0;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 5rem;
+        box-shadow: 0px 1px 25px -10px;
+    }
+    .nav_ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    }
+    .nav_li{
+        font-size: medium;
+    }
+    .nav_li_a{
+        font-size: 1rem;
+    }
+  }

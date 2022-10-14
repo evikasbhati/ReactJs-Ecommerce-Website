@@ -21,7 +21,6 @@ const SingleProduct = () => {
     ///// Get product //////
     const [product,setProduct]=useState({})
     useEffect(()=>{
-        console.log("Effect start");
         const getproduct=async()=>{
             try{
                 const res=await userRequest.get("/products/find/"+id)

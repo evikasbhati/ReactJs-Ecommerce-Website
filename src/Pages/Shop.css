@@ -24,3 +24,9 @@
     margin: 0px 2px;
     font-weight: 400;
 }
+
+@media screen and (max-width:480px) {
+    .fil_button{
+        display: flex;
+    }
+}

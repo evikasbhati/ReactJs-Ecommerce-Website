@@ -19,6 +19,7 @@
     padding: 20PX;
     box-shadow: 1px 1px 8px 1px;
     border-radius: 10px;
+    margin: 0 1rem;
 }
 .login_title_container{
     display: flex;

@@ -3,13 +3,14 @@ import './Footer.css'
 
 const Footer=()=>{
     return(
+        <>
         <div className="footer">
             <div className="about_us">
                 <h2 className="footer_head">About us</h2>
                 <a href="#" className="f_list">Blog</a>
                 <a href="#" className="f_list">Investors</a>
                 <a href="#" className="f_list">Policy</a>
-                <a href="#" className="f_list">Terms and conditions</a>
+                <a href="#" className="f_list">T & C</a>
             </div>
             <div className="get_in_touch">
             <h2 className="footer_head">Get in touch</h2>
@@ -25,10 +26,11 @@ const Footer=()=>{
                 <a href="#" className="f_icon"><Instagram/></a>
                 <a href="#" className="f_icon"><YouTube/></a>
             </div>
-            <div className="footer_banner">
-                <p className="f_ban">© 2022 OhWoAttire</p>
-            </div>
         </div>
+         <div className="footer_banner">
+         <p className="f_ban">© 2022 OhWoAttire</p>
+     </div>
+        </>
     )
 }
 export default Footer

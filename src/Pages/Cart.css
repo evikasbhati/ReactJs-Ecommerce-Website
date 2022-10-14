@@ -107,3 +107,23 @@
     background-color: #fcba03;
     box-shadow: 0px 1px 2px 0px black;
 }
+.price_cont{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:480px){
+    .top_items{
+        justify-content:left ;
+    }    
+    .cart_page_contanier{
+        flex-direction: column;
+    } 
+    .pro_add_cont{
+        margin-left: 1rem;
+    }  
+    .checkout_contain{
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    
+}

@@ -1,8 +1,9 @@
 .footer{
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     height: 250px;
     width: 100%;
+    min-height: 15rem;
     display: flex;
     background-color: #1179ae;   
     justify-content: space-around; 
@@ -45,10 +46,9 @@
     transform: scale(2);
 }
 .footer_banner{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     display: flex;
-    height: 40px;
     width: 100%;
     background-color: white;
     align-items: center;

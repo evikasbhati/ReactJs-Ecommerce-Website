@@ -28,8 +28,8 @@ import { useSelector } from "react-redux";
 const App = () => {
   const user = useSelector((state) => state.user.currentUser)
   return (
-    <Router>
-    {/* // <HashRouter> */}
+    // <Router>
+     <HashRouter>
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/shop/:catogory" element={ <Shop /> } />
@@ -48,8 +48,8 @@ const App = () => {
         <Route path="/products/:productId" element={ <EProduct /> } />
         <Route path="/addproduct" element={ <AddProduct /> } />
       </Routes>
-      {/* // </HashRouter> */}
-    </Router> 
+       </HashRouter> 
+    // </Router> 
 
   );
 }
