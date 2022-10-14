@@ -5,10 +5,11 @@ import { useState } from 'react'
 
 const Slidebar = () => {
     const [ index, setIndex ] = useState(0);
-    const [ newclass, setClass ] = useState("wrapper_1")
+    const [ newclass, setClass ] = useState("wrapper_1");
+
     const move = (dir) => {
         if (dir === 1) {
-            setIndex(index < 2 ? index + 1 : 0)
+            setIndex(index < 2 ? index + 1 : 0);
             if (index === 0) {
                 setClass("wrapper_0")
             } else setClass(index === 1 ? "wrapper_1" : "wrapper_2")

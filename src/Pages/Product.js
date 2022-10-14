@@ -7,6 +7,7 @@ import { useState,useEffect } from 'react'
 import {userRequest} from '../Components/requestMethod/RequestMethod'
 import {useDispatch} from 'react-redux'
 import {addProduct} from '../redux/cartRedux'
+
 const SingleProduct = () => {
     const location=useLocation()
     const id=location.pathname.split("/")[2]
@@ -29,7 +30,6 @@ const SingleProduct = () => {
         }
         getproduct()
     },[id])
-    console.log('afaff',product)
 
     ////// Add to cart /////
     const dispatch=useDispatch()
@@ -37,7 +37,6 @@ const SingleProduct = () => {
     dispatch(addProduct({...product,quantity,price:product.price}))
     }
 
-    
     return (
         <div className="Single_pro_container">
             <Navbar />

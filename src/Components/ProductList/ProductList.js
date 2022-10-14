@@ -21,10 +21,8 @@ const ProductList=({cat,filters,sort})=>{
    useEffect(()=>{
      cat && setFilteredProducts(
             products.filter((item)=>Object.entries(filters).every(([key,value])=>item[key].includes(value)
-            
             ))
         )
-
     },[cat,filters,products])
     
     useEffect(()=>{
@@ -35,10 +33,7 @@ const ProductList=({cat,filters,sort})=>{
             setFilteredProducts((prev)=>[...prev].sort((a,b)=>a.price-b.price))
         }
         else setFilteredProducts((prev)=>[...prev].sort((a,b)=>b.price-a.price))
-        
     },[sort])
-    // console.log(filteredPoducts)
-    // console.log(filters,cat)
 
     return(
         <div className="product_container">
