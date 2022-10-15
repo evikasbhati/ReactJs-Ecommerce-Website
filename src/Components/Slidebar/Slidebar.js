@@ -31,9 +31,9 @@ const Slidebar = () => {
                             <img src={ item.img } alt="shop" className="img" />
                         </div>
                         <div className="info_container">
-                            <h2 className="title">{ item.Title }</h2>
+                            <h2 className="slide_title">{ item.Title }</h2>
                             <p className="dis">{ item.des }</p>
-                            <button className="button">Shop Now</button>
+                            <button className="slide_button">Shop Now</button>
                         </div>
                     </div>
                 )) }

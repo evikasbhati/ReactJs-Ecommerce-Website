@@ -79,7 +79,6 @@
 }
 .password_container{
     margin: 10px 0px;
-
 }
 .sign_sug{
     font-weight: 300;
@@ -99,4 +98,31 @@
 .signup_button:hover{
     background-color:#83d0f7 ;
     transition: ease 0.5s;
+}
+
+@media screen and (max-width:480px) {
+    .signup{
+        width:290px;
+        height:fit-content;
+    }
+    .sign_hr{
+        width: 280px;
+    }
+    .sign_name_container{
+        flex-direction: column;
+    }
+    .name_container{
+        margin: 10px 0px;
+    }
+    .sign_input_name{
+        width: 260px;
+        padding: 10px 5px;
+    } 
+    .sign_input_lname{
+        width: 260px;
+        padding: 10px 5px;
+    }    
+    .sign_name_container{
+        margin: 10px 0px 0px 0px;
+    }
 }

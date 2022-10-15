@@ -67,3 +67,9 @@
 .pro_icon:hover{
     transform: scale(1.2);
 }
+@media screen and (max-width:480px) {
+    .product_container{
+        margin: 0;
+    }
+    
+}

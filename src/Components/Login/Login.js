@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { login } from '../../redux/apicall'
 import './Login.css'
 
@@ -34,10 +35,11 @@ const Login = () => {
           <input className='sign_input' type="text" placeholder='Username'
            onChange={handleUsernameData}/>
         </div>
-        <div className="password_container">
+        <div className="user_container">
           <input className='sign_input' type="password" placeholder='Password' onChange={handlePasswordData} />
         </div>
         <div className="login_but"><button className='login_button'onClick={handleLogin}>Login</button></div>
+      <h4 className='create_account'>Create New <Link to="/register">Account</Link> </h4>
       </div>
     </div>
   )

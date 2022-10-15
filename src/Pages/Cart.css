@@ -32,7 +32,7 @@
     margin: 0px 5px; ;
 }
 
-.product_container{
+.cart_product_container{
     display: flex;
     box-shadow: 1px 1px 24px 2px;
     margin-left: 10px;
@@ -118,6 +118,9 @@
     .cart_page_contanier{
         flex-direction: column;
     } 
+    .cart_product_container{
+        flex-direction: column;
+    }
     .pro_add_cont{
         margin-left: 1rem;
     }  

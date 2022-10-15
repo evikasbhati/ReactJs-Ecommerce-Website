@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './SignUp.css'
 
 const SignUp = () => {
@@ -27,6 +28,7 @@ const SignUp = () => {
         <div className="password_container">
           <input className='sign_input' type="text" placeholder='Password' />
         </div>
+        <h4 className='create_account'>Already have an <Link to="/login">account</Link> </h4>
         <div className="sign_sug">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</div>
         <div className="signup_but"><button className='signup_button'>Sign up</button></div>
       </div>

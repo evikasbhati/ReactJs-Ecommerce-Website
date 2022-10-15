@@ -18,12 +18,9 @@ const Shop = () => {
              [e.target.name]:value
         })
     }
-    
 
     const[sort,setSort]=useState("Newest")
       
-
-
     return (
         <div className="shop_container">
             <Navbar />
@@ -43,14 +40,14 @@ const Shop = () => {
                     </button>
                     <button className='fil_button'> 
                         <div className="filter"><span className="filter_info">Filter</span>
-                        <select  id="fill_option" name="color"  onChange={filterfunc} >
+                        {/* <select  id="fill_option" name="color"  onChange={filterfunc} >
                                 <option disabled>Colour</option>
                                 <option value="blue">Blue</option>
                                 <option value="black">Black</option>
                                 <option value="white">White</option>
                                 <option value="red">Red</option>
                                 <option value="green">Green</option>
-                            </select>
+                            </select> */}
                             <select  id="fill_option" name="Size"  onChange={filterfunc}>
                                 <option disabled>Size</option>
                                 <option value="XS">XS</option>

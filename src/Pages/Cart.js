@@ -49,11 +49,11 @@ const Cart = () => {
                 <div className="item_conatiner">
                     { cart.products.map(product => (
                         <div key={product._id}>
-                            <div className="product_container">
+                            <div className="cart_product_container">
                                 <img src={ product.img } className="imgcheck" alt="" />
                                 <div className="pro_det">
                                     <span className="pro_name"><b>Product: </b>  { product.title }</span>
-                                    <span className="pro_name"><b>Product Id : </b> { product._id }</span>
+                                    {/* <span className="pro_name"><b> Product Id : </b> { product._id }</span> */}
                                     <span className="pro_name"><b>Colour :</b> { product.color }</span>
                                 </div>
                                 <div className="pro_add_cont">

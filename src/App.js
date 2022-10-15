@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/success" element={ <Success /> } />
         <Route path="/login" element={ user ? <Navigate to="/" /> : <Login /> } />
         <Route path="/admin" element={ <AdminHome /> } />
-        <Route path="#/Register" element={ <SignUp /> } />
+        <Route path="/register" element={ <SignUp /> } />
         <Route path="/shop:catogory" element={ <Shop /> } />
         <Route path="/admin" element={ <AdminHome /> } />
         <Route path="/users" element={ <UserList /> } />
