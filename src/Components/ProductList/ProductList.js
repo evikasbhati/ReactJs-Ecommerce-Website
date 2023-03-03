@@ -8,6 +8,7 @@ const ProductList=({cat,filters,sort})=>{
     const[products,setProducts]=useState([])
     const[filteredPoducts,setFilteredProducts]=useState([])
 
+
     useEffect(()=>{
         const getproducts=async()=>{
             try{

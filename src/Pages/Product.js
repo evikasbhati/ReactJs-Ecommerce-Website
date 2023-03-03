@@ -5,12 +5,13 @@ import { Add, Remove } from '@material-ui/icons'
 import { useLocation } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import {userRequest} from '../Components/requestMethod/RequestMethod'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import {addProduct} from '../redux/cartRedux'
 
 const SingleProduct = () => {
     const location=useLocation()
     const id=location.pathname.split("/")[2]
+    const products=useSelector((state)=>state.cart.products)
     
        /////  set Quantity /////
     const [quantity,setQuantity]=useState(1)
@@ -31,9 +32,14 @@ const SingleProduct = () => {
     },[id])
 
     ////// Add to cart /////
+    // console.log("product:",product)
+    // console.log("products:",products[0].quantity+quantity)
+    console.log("products:",products)
     const dispatch=useDispatch()
-    const addCart=()=>{
-    dispatch(addProduct({...product,quantity,price:product.price}))
+    const addCart=(productValue)=>{
+        if(!products.some((item)=>item._id===productValue._id)){
+            dispatch(addProduct({...product,quantity,price:product.price}))
+        }
     }
 
     return (
@@ -73,7 +79,7 @@ const SingleProduct = () => {
                         </div>
                     </div>
                     <div className="add_to_cart">
-                        <button className="but_add_cart" onClick={addCart}>Add to cart</button>
+                        <button className="but_add_cart" onClick={()=>addCart(product)}>Add to cart</button>
                         {/* <button className="buy_now">Buy now</button> */}
                     </div>
                 </div>

@@ -14,13 +14,13 @@ export const CatogoriesData=[
     {id:3,
     title:"JACKETS",
     img:"https://images.unsplash.com/photo-1509539662397-116cb90542f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGphY2tldHN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    cat:"Jackets"
+    cat:"Jacket"
     },
 
     {id:4,
     title:"SHIRTS",
     img:"https://images.unsplash.com/photo-1603796908893-e3472142232b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHNoaXJ0c3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
-    cat:"Shirts"
+    cat:"Shirt"
     },
 
     {id:5,

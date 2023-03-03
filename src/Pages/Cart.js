@@ -19,6 +19,7 @@ const Cart = () => {
     const ontoken=(token)=>{
         setStripeTokne(token)
     }
+    console.log(cart);
     useEffect(()=>{
         const makeRequest=async()=>{
             try{

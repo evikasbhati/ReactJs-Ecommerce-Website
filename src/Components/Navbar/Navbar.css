@@ -6,7 +6,7 @@
     margin-top: 0.0625rem;
     background-color: white;
     box-shadow: 0px 1px 4px 0px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 .navbar_box{
     position: sticky;
@@ -120,6 +120,9 @@
         cursor: pointer;
         margin-left:10px;
         z-index: 100;
+        border: white solid 0.2px;
+        border-radius: 8px;
+
     }
     .menu_items{
         display: none;
@@ -127,10 +130,10 @@
     .hamMenu{
         position:absolute;
         top: 1rem;
-        background-color:black;
-        opacity: 0.7;
+        background-color:#39b5f4;
+        /* opacity: 0.9; */
         display: block;
-        width: 7rem;
+        width: 8rem;
         height: 8rem;
         margin-left: 0.25rem;
         border-radius: 1rem;

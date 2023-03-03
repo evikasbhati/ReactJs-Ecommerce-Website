@@ -110,9 +110,13 @@
     }
 .Arrow_right{
     right: 0.5rem;
+    height: 40px;
+    width: 40px;
 }
 .Arrow_left{
     left: 0.5rem;
+    height: 40px;
+    width: 40px;
 }
 .info_container{
    position: absolute;
