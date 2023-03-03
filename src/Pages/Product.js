@@ -32,9 +32,6 @@ const SingleProduct = () => {
     },[id])
 
     ////// Add to cart /////
-    // console.log("product:",product)
-    // console.log("products:",products[0].quantity+quantity)
-    console.log("products:",products)
     const dispatch=useDispatch()
     const addCart=(productValue)=>{
         if(!products.some((item)=>item._id===productValue._id)){
