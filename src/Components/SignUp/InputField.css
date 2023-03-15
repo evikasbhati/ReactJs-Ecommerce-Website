@@ -1,0 +1,36 @@
+
+.input_container{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input_field{
+    width: 330px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    color: black;
+    box-shadow: 0px 0px 3px 0px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+.input_error{
+    color: red;
+    display: none;
+}
+input:invalid[focus="true"]~.input_field{
+    border: 1px solid red;
+}
+input:invalid[focus="true"]~.input_error{
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    .input_field{
+        width:275px;
+        height:fit-content;
+    }
+}

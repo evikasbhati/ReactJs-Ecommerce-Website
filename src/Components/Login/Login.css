@@ -35,10 +35,9 @@
     width: 330px;
     padding: 10px 5px;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px solid gray;
     background-color: #fcfcfc;
-    color: gray;
-    box-shadow: 1px 1px 8px 1px;
+    box-shadow: 0px 0px 3px 0px;
 
 } 
 .user_container{
