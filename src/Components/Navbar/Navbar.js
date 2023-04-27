@@ -5,17 +5,31 @@ import Banner from './Banner/Banner'
 import { ShoppingCartOutlined } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
 import { useSelector } from 'react-redux'
-import{ Link} from 'react-router-dom'
+import{ Link, useNavigate} from 'react-router-dom'
 import { useState } from 'react'
+import { login } from '../../redux/apicall'
+import { useDispatch } from 'react-redux'
 
 const Navbar = () => {
     const [hamBurger,setHamBurger]=useState(false);
+    const [lougoutDiv,setSetLogoutDiv]=useState(false);
     const quantity=useSelector(state=>state.cart.quantity)
     const user = useSelector(state => state.user)
+    const navigate=useNavigate()
+    const dispatch=useDispatch()
+    
 
     const handleHamburger=()=>{
         setHamBurger(!hamBurger);
     }
+    const handleLogoutDiv=()=>{
+        setSetLogoutDiv(!lougoutDiv)
+    }
+    const handleLogout=()=>{
+        login(dispatch,null)
+        navigate("/login");
+    }
+    console.log(user);
     return (
         <div>
             <div className="banner"><Banner /></div>
@@ -48,6 +62,8 @@ const Navbar = () => {
                         </div>
                 <Link to='/cart'><button className="cart_button" ><Badge badgeContent={quantity} color="secondary"><ShoppingCartOutlined/></Badge></button></Link>
                 {user.currentUser?.isAdmin && <Link to='/Admin'><button className="person_button" ><Person/></button></Link>}
+                {user?.currentUser && <button className="person_button" onClick={handleLogoutDiv}><Person/></button>}
+                {lougoutDiv && <div className='logout' onClick={handleLogout}><span className='logoutSpan'>Logout</span></div>} 
                 </div>
             </div>
         </div>

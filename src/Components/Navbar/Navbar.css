@@ -89,6 +89,8 @@
     background-color: white;
     padding: 3px;
     border-radius: 5px;
+    color: black;
+    font-size: 16px;
     border: none;
     box-shadow: 0px 1px 5px 0px;
 }
@@ -120,7 +122,7 @@
         cursor: pointer;
         margin-left:10px;
         z-index: 100;
-        border: white solid 0.2px;
+        /* border: white solid 0.2px; */
         border-radius: 8px;
 
     }
@@ -130,7 +132,7 @@
     .hamMenu{
         position:absolute;
         top: 1rem;
-        background-color:#39b5f4;
+        background-color:rgb(209, 81, 245);
         /* opacity: 0.9; */
         display: block;
         width: 8rem;
@@ -154,4 +156,23 @@
     .nav_li_a{
         font-size: 1.125rem;
     }
+  }
+  .logout{
+    position: absolute;
+    top:60px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(209, 81, 245);
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    /* border: 0.2px solid black; */
+    box-shadow: 0px 1px 25px -10px;
+    cursor: pointer;
+  }
+  .logoutSpan{
+    color: white;
+    font-size: 20px;
   }

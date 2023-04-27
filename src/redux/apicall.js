@@ -1,15 +1,19 @@
 import { adminRequest, userRequest } from "../Components/requestMethod/RequestMethod"
 import { addProductFailure, addProductStart, addProductSuccess, deleteProductFailure, deleteProductStart, deleteProductSuccess, getProductFailure, getProductStart, getProductSuccess, updateProductFailure, updateProductStart, updateProductSuccess } from "./productRedux"
-import { loginFailure, loginStart, loginSuccess } from "./userRedux"
+import { loginFailure, loginStart, loginSuccess, logout } from "./userRedux"
 
 
 export const login=async(dispatch,user)=>{
-    dispatch(loginStart())
-    try{
-        const res=await userRequest.post("user/auth/login",user)
-        dispatch(loginSuccess(res.data))
-    }catch(err){
-        dispatch(loginFailure(err))
+    if(user===null){
+        dispatch(logout())
+    }else{
+        dispatch(loginStart())
+        try{
+            const res=await userRequest.post("user/auth/login",user)
+            dispatch(loginSuccess(res.data))
+        }catch(err){
+            dispatch(loginFailure(err))
+        }
     }
 }
 

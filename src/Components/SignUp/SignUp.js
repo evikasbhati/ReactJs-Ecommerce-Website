@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { Link, Navigate,useNavigate } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import "./SignUp.css";
 import InputField from "./InputField";
 import axios from "axios";
@@ -101,7 +101,6 @@ const SignUp = () => {
           handleFunction={handleUserName}
           label="Username should have atleast 5 characters"
           errormessage="somet"
-          value={state.username}
         />
         <InputField
           placeholder="Email Address"
