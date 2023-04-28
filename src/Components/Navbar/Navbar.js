@@ -29,7 +29,6 @@ const Navbar = () => {
         login(dispatch,null)
         navigate("/login");
     }
-    console.log(user);
     return (
         <div>
             <div className="banner"><Banner /></div>
